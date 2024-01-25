@@ -1,0 +1,16 @@
+<div class="main">
+
+<ul class="remote-menu">
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="cart">Cart</a></li>
+  <li><a routerLink="product">Product</a></li>
+</ul>
+  <h1>HOST APP</h1>
+  isLoggedIn: {{ isLoggedIn }} <br/>
+  
+  <org-ui (click)="simulateLogin()" label="Login"></org-ui>
+  <org-ui (click)="simulateLogout()" label="Logout"></org-ui>
+  
+  
+<router-outlet></router-outlet>
+</div>
